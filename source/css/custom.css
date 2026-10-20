@@ -1,0 +1,57 @@
+:root {
+  --lab-teal: #16a6a1;
+  --lab-navy: #0b1f33;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.banner .mask {
+  background: linear-gradient(120deg, rgba(6, 20, 33, 0.62), rgba(12, 91, 98, 0.18));
+}
+
+.banner-text .h2,
+.banner-text h1 {
+  letter-spacing: 0.03em;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+}
+
+.index-header {
+  font-weight: 700;
+}
+
+.index-card {
+  border: 1px solid rgba(22, 166, 161, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 12px 34px rgba(11, 31, 51, 0.07);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.index-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 42px rgba(11, 31, 51, 0.12);
+}
+
+.markdown-body h2 {
+  border-bottom-color: rgba(22, 166, 161, 0.24);
+}
+
+.markdown-body blockquote {
+  border-left-color: var(--lab-teal);
+}
+
+.about-avatar img {
+  border-radius: 28%;
+  box-shadow: 0 10px 30px rgba(11, 31, 51, 0.2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

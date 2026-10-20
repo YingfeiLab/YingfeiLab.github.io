@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="title desc">
+  <title id="title">Deterministic edge intelligence network</title>
+  <desc id="desc">Abstract network topology in navy, teal and cyan</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#061421"/>
+      <stop offset=".55" stop-color="#0b2b42"/>
+      <stop offset="1" stop-color="#0c5b62"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#55e6dc" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#55e6dc" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#9ce9e4" stroke-opacity=".08" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <circle cx="1250" cy="190" r="390" fill="url(#glow)" filter="url(#blur)"/>
+  <circle cx="245" cy="745" r="330" fill="url(#glow)" filter="url(#blur)" opacity=".55"/>
+  <g fill="none" stroke="#6ce2da" stroke-opacity=".45" stroke-width="2">
+    <path d="M80 680 310 525 520 610 745 375 945 485 1195 260 1510 385"/>
+    <path d="M160 255 390 350 590 215 815 330 1030 175 1260 310 1460 165" stroke-opacity=".25"/>
+    <path d="M310 525 390 350M520 610 590 215M745 375 815 330M945 485 1030 175M1195 260 1260 310" stroke-opacity=".2"/>
+  </g>
+  <g fill="#a7fff7" stroke="#0b2b42" stroke-width="8">
+    <circle cx="80" cy="680" r="14"/><circle cx="310" cy="525" r="20"/><circle cx="520" cy="610" r="13"/>
+    <circle cx="745" cy="375" r="25"/><circle cx="945" cy="485" r="14"/><circle cx="1195" cy="260" r="22"/><circle cx="1510" cy="385" r="13"/>
+    <circle cx="160" cy="255" r="11"/><circle cx="390" cy="350" r="15"/><circle cx="590" cy="215" r="12"/>
+    <circle cx="815" cy="330" r="14"/><circle cx="1030" cy="175" r="12"/><circle cx="1260" cy="310" r="15"/><circle cx="1460" cy="165" r="11"/>
+  </g>
+  <g fill="none" stroke="#bffbf6" stroke-opacity=".16">
+    <circle cx="745" cy="375" r="65"/><circle cx="745" cy="375" r="100"/>
+    <circle cx="1195" cy="260" r="55"/><circle cx="1195" cy="260" r="88"/>
+  </g>
+</svg>

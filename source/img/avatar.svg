@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Yingfei Lab</title>
+  <desc id="desc">YF monogram on a teal and navy gradient</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1f33"/>
+      <stop offset="1" stop-color="#16a6a1"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="60" fill="url(#g)"/>
+  <path d="M47 66h35l46 63 46-63h35l-65 88v39h-32v-39L47 66Z" fill="#fff"/>
+  <path d="M151 126h58v27h-58z" fill="#9ff3ea" opacity=".9"/>
+</svg>
