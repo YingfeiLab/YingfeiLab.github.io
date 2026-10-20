@@ -11,7 +11,7 @@ tags:
   - HTTPS
   - WebSocket
 sticky: 100
-index_img: /img/research-network.svg
+index_img: /img/default.png
 excerpt: 在 Windows 主机上使用 Tailscale Funnel，将本地 Web 服务安全接入公网 HTTPS；涵盖安装、开机运行、WSS 验证、DNS 排障与安全加固。
 ---
 

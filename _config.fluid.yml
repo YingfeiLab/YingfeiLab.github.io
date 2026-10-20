@@ -6,20 +6,7 @@ dark_mode:
   enable: true
   default: auto
 
-color:
-  body_bg_color: "#f4f7fb"
-  body_bg_color_dark: "#101720"
-  navbar_bg_color: "#0b1f33"
-  navbar_bg_color_dark: "#09131f"
-  link_hover_color: "#16a6a1"
-  link_hover_color_dark: "#5ed8d2"
-  post_link_color: "#087f8c"
-  post_link_color_dark: "#5ed8d2"
-
-font:
-  font_size: 16px
-  font_family: 'Inter, "Noto Sans SC", "Microsoft YaHei", sans-serif'
-  letter_spacing: 0.015em
+# Inherit Fluid's default palette and typography. Keep only site-specific settings.
 
 custom_css:
   - /css/custom.css
@@ -31,9 +18,7 @@ custom_js:
 navbar:
   blog_title: "Yingfei Lab"
   ground_glass:
-    enable: true
-    px: 8
-    alpha: 0.72
+    enable: false
   menu:
     - { key: "首页", link: "/", icon: "iconfont icon-home-fill" }
     - { key: "网络互联", link: "/categories/network-connectivity/", icon: "iconfont icon-link-fill" }
@@ -51,25 +36,23 @@ search:
 
 banner:
   parallax: true
-  width_height_ratio: 0.7
+  width_height_ratio: 1.0
 
 index:
-  banner_img: /img/research-network.svg
-  banner_img_height: 92
-  banner_mask_alpha: 0.28
+  banner_img: /img/default.png
+  banner_img_height: 100
+  banner_mask_alpha: 0.3
   slogan:
     enable: true
-    text:
-      - "Deterministic Networks × Intelligent Edge Systems"
-      - "让通信、计算与智能在边缘协同演进"
+    # Empty text uses the site's subtitle from _config.yml.
+    text: ""
   auto_excerpt:
     enable: true
 
 post:
-  banner_img: /img/research-network.svg
-  banner_img_height: 55
-  banner_mask_alpha: 0.42
-  default_index_img: /img/research-network.svg
+  banner_img: /img/default.png
+  banner_img_height: 70
+  banner_mask_alpha: 0.3
   meta:
     author:
       enable: true
@@ -93,27 +76,27 @@ post:
       enable: true
 
 archive:
-  banner_img: /img/research-network.svg
-  banner_img_height: 45
-  banner_mask_alpha: 0.42
+  banner_img: /img/default.png
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
 
 category:
   enable: true
-  banner_img: /img/research-network.svg
-  banner_img_height: 45
-  banner_mask_alpha: 0.42
+  banner_img: /img/default.png
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
 
 tag:
   enable: true
-  banner_img: /img/research-network.svg
-  banner_img_height: 45
-  banner_mask_alpha: 0.42
+  banner_img: /img/default.png
+  banner_img_height: 80
+  banner_mask_alpha: 0.3
 
 about:
   enable: true
-  banner_img: /img/research-network.svg
-  banner_img_height: 48
-  banner_mask_alpha: 0.42
+  banner_img: /img/default.png
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
   avatar: /img/avatar.svg
   name: "Yingfei Yao"
   intro: "Industrial Edge Intelligence · TSN · Edge LLM/LMM Systems"
@@ -122,31 +105,30 @@ about:
     - { class: "iconfont icon-mail", link: "mailto:yaoyfbox@163.com", tip: "Email" }
 
 page:
-  banner_img: /img/research-network.svg
-  banner_img_height: 48
-  banner_mask_alpha: 0.42
+  banner_img: /img/default.png
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
 
 page404:
   enable: true
-  banner_img: /img/research-network.svg
+  banner_img: /img/default.png
   banner_img_height: 85
-  banner_mask_alpha: 0.38
+  banner_mask_alpha: 0.3
   redirect_delay: 5000
 
 footer:
-  content: 'Built with <a href="https://hexo.io" target="_blank" rel="nofollow noopener">Hexo</a> · Theme <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">Fluid</a>'
   statistics:
     enable: false
 
 fun_features:
   typing:
     enable: true
-    typeSpeed: 48
+    typeSpeed: 70
     cursorChar: "_"
     loop: false
-    scope: [home]
+    scope: []
   progressbar:
     enable: true
     height_px: 3
-    color: "#23b5af"
+    color: "#29d"
     options: { showSpinner: false, trickleSpeed: 100 }
