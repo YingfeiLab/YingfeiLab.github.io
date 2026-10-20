@@ -1,4 +1,22 @@
 /* Keep Fluid's native appearance; only accessibility and long-title fixes below. */
+/* Keep content links blue across posts, lists, categories, and tags. */
+main a[href]:not(.btn) {
+  color: var(--post-link-color);
+}
+
+main a[href]:not(.btn):hover {
+  color: var(--link-hover-color);
+}
+
+/* Fluid gives tag-cloud links inline colors, which need a stronger override. */
+main .tagcloud a[href] {
+  color: var(--post-link-color) !important;
+}
+
+main .tagcloud a[href]:hover {
+  color: var(--link-hover-color) !important;
+}
+
 .language-menu .language-globe {
   margin-right: 0.2rem;
 }
