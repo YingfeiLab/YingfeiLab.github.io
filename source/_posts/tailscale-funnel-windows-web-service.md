@@ -2,8 +2,7 @@
 title: 图解 Tailscale Funnel：无需公网 IP、自购域名，让手机直连 Windows Web 服务
 date: 2026-10-19 18:50:01
 updated: 2026-10-20 12:00:00
-categories:
-  - 网络互联教程
+categories: []
 tags:
   - Tailscale
   - Funnel

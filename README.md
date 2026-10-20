@@ -24,15 +24,14 @@ npm run new -- "文章标题"
 导航按 Fluid 官网的方式提供三个独立入口：
 
 - **归档**（`/archives/`）：按发布日期倒序，按年份分组；同时生成年度和月度归档。首页置顶不会改变归档的日期顺序。
-- **分类**（`/categories/`）：按栏目组织文章。“网络互联教程”是其中一个分类，原链接 `/categories/network-connectivity/` 保持不变。
+- **分类**（`/categories/`）：按文章实际填写的栏目组织文章。网络教程不再设置独立栏目，统一从归档访问。
 - **标签**（`/tags/`）：按技术关键词交叉检索，如 Tailscale、Windows、HTTPS；同一篇文章可以有多个标签。
 
-发布网络互联类文章时，在 Markdown 顶部的 Front-matter 设置：
+发布教程文章时，在 Markdown 顶部的 Front-matter 设置日期和技术标签；不设分类时使用空列表：
 
 ```yaml
 date: 2026-10-20 20:00:00
-categories:
-  - 网络互联教程
+categories: []
 tags:
   - Tailscale
   - Windows
