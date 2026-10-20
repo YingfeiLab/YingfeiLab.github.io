@@ -1,4 +1,13 @@
 /* Keep Fluid's native appearance; only accessibility and long-title fixes below. */
+.language-menu .language-globe {
+  margin-right: 0.2rem;
+}
+
+.language-option a[aria-current="page"] {
+  outline: 2px solid currentColor;
+  outline-offset: -2px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     scroll-behavior: auto !important;
