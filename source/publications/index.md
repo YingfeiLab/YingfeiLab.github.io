@@ -1,6 +1,7 @@
 ---
 title: 论文
 date: 2026-10-20 20:00:00
+banner_img: "https://fluid.s3.bitiful.net/bg/73twhs.png?w=1920&fmt=webp"
 ---
 
 ## Selected publications

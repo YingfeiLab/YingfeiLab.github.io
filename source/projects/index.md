@@ -1,6 +1,7 @@
 ---
 title: 项目
 date: 2026-10-20 20:00:00
+banner_img: "https://fluid.s3.bitiful.net/bg/post.png?w=1920&fmt=webp"
 ---
 
 ## EdgeCluster-LMM

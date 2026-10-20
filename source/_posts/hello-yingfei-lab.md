@@ -8,7 +8,7 @@ tags:
   - 博客
   - GitHub Pages
   - Hexo
-index_img: /img/default.png
+index_img: "https://fluid.s3.bitiful.net/bg/vdysjx.png?w=960&fmt=webp"
 excerpt: 这是 Yingfei Lab 的第一篇文章，也是一个关于为什么建立这个博客、这里会持续记录什么的简短说明。
 ---
 

@@ -39,7 +39,8 @@ banner:
   width_height_ratio: 1.0
 
 index:
-  banner_img: /img/default.png
+  # Official demo backgrounds: https://github.com/fluid-dev/hexo-fluid-blog
+  banner_img: "https://fluid.s3.bitiful.net/bg/vdysjx.png?w=1920&fmt=webp"
   banner_img_height: 100
   banner_mask_alpha: 0.3
   slogan:
@@ -50,7 +51,7 @@ index:
     enable: true
 
 post:
-  banner_img: /img/default.png
+  banner_img: "https://fluid.s3.bitiful.net/bg/dojm2h.png?w=1920&q=100&fmt=webp"
   banner_img_height: 70
   banner_mask_alpha: 0.3
   meta:
@@ -76,25 +77,25 @@ post:
       enable: true
 
 archive:
-  banner_img: /img/default.png
+  banner_img: "https://fluid.s3.bitiful.net/bg/1cm6iu.png?w=1920&fmt=webp"
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
 category:
   enable: true
-  banner_img: /img/default.png
+  banner_img: "https://fluid.s3.bitiful.net/bg/sdqryn.png?w=1920&fmt=webp"
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
 tag:
   enable: true
-  banner_img: /img/default.png
+  banner_img: "https://fluid.s3.bitiful.net/bg/n7a9bv.png?w=1920&fmt=webp"
   banner_img_height: 80
   banner_mask_alpha: 0.3
 
 about:
   enable: true
-  banner_img: /img/default.png
+  banner_img: "https://fluid.s3.bitiful.net/bg/4xvpqo.png?w=1920&fmt=webp"
   banner_img_height: 60
   banner_mask_alpha: 0.3
   avatar: /img/avatar.svg
@@ -105,16 +106,19 @@ about:
     - { class: "iconfont icon-mail", link: "mailto:yaoyfbox@163.com", tip: "Email" }
 
 page:
-  banner_img: /img/default.png
+  banner_img: "https://fluid.s3.bitiful.net/bg/post.png?w=1920&fmt=webp"
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
 page404:
   enable: true
-  banner_img: /img/default.png
+  banner_img: "https://fluid.s3.bitiful.net/bg/g8xjqe.png?w=1920&fmt=webp"
   banner_img_height: 85
   banner_mask_alpha: 0.3
   redirect_delay: 5000
+
+links:
+  banner_img: "https://fluid.s3.bitiful.net/bg/73twhs.png?w=1920&fmt=webp"
 
 footer:
   statistics:
