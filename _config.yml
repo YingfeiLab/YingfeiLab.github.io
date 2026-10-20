@@ -62,6 +62,7 @@ index_generator:
 # Category & Tag
 default_category: 随笔
 category_map:
+  网络互联教程: network-connectivity
 tag_map:
 
 # Metadata and dates

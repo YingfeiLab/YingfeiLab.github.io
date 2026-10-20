@@ -23,6 +23,10 @@ font:
 
 custom_css:
   - /css/custom.css
+  - /css/tailscale-guide.css
+
+custom_js:
+  - /js/tailscale-guide.js
 
 navbar:
   blog_title: "Yingfei Lab"
@@ -32,6 +36,7 @@ navbar:
     alpha: 0.72
   menu:
     - { key: "首页", link: "/", icon: "iconfont icon-home-fill" }
+    - { key: "网络互联", link: "/categories/network-connectivity/", icon: "iconfont icon-link-fill" }
     - { key: "归档", link: "/archives/", icon: "iconfont icon-archive-fill" }
     - { key: "项目", link: "/projects/", icon: "iconfont icon-code" }
     - { key: "论文", link: "/publications/", icon: "iconfont icon-book-fill" }

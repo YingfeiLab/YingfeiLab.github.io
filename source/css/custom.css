@@ -55,3 +55,17 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+@media (max-width: 575px) {
+  .banner-text {
+    width: 92%;
+  }
+
+  .banner-text h1,
+  .banner-text .h2 {
+    font-size: 1.45rem !important;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
