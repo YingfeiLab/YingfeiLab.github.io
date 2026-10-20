@@ -21,8 +21,9 @@ navbar:
     enable: false
   menu:
     - { key: "首页", link: "/", icon: "iconfont icon-home-fill" }
-    - { key: "网络互联", link: "/categories/network-connectivity/", icon: "iconfont icon-link-fill" }
     - { key: "归档", link: "/archives/", icon: "iconfont icon-archive-fill" }
+    - { key: "分类", link: "/categories/", icon: "iconfont icon-category-fill" }
+    - { key: "标签", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "项目", link: "/projects/", icon: "iconfont icon-code" }
     - { key: "论文", link: "/publications/", icon: "iconfont icon-book-fill" }
     - { key: "关于", link: "/about/", icon: "iconfont icon-user-fill" }
@@ -83,6 +84,9 @@ archive:
 
 category:
   enable: true
+  order_by: "-length"
+  collapse_depth: 0
+  post_order_by: "-date"
   banner_img: "https://fluid.s3.bitiful.net/bg/sdqryn.png?w=1920&fmt=webp"
   banner_img_height: 60
   banner_mask_alpha: 0.3

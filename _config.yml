@@ -65,6 +65,20 @@ category_map:
   网络互联教程: network-connectivity
 tag_map:
 
+# Date-based archives are independent of homepage sticky posts.
+archive_generator:
+  yearly: true
+  monthly: true
+  daily: false
+  order_by: -date
+
+# Topic-based lists show the most recent posts first within each topic.
+category_generator:
+  order_by: -date
+
+tag_generator:
+  order_by: -date
+
 # Metadata and dates
 meta_generator: true
 date_format: YYYY-MM-DD
