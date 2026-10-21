@@ -8,6 +8,7 @@ const { publicDir, catalogFile, htmlFiles, translatableNodes, translatableAttrs,
 
 const translations = JSON.parse(fs.readFileSync(catalogFile, 'utf8'));
 const overrides = JSON.parse(fs.readFileSync(path.join(__dirname, 'translation-overrides.json'), 'utf8'));
+const publicationsTranslations = JSON.parse(fs.readFileSync(path.join(__dirname, 'publications-translations.json'), 'utf8'));
 const toTraditional = OpenCC.Converter({ from: 'cn', to: 'tw' });
 const supported = ['en', 'zh-CN', 'zh-TW', 'ja'];
 const labels = { en: 'Language', 'zh-CN': '语言', 'zh-TW': '語言', ja: '言語' };
@@ -118,6 +119,25 @@ function showContentAddressesAsLinkText(document) {
   }
 }
 
+function localizePublications(document, language) {
+  if (language === 'en') return;
+  const content = document.querySelector('.page-content');
+  if (!content) throw new Error('Publications content not found');
+  const walker = document.createTreeWalker(content, 4);
+  const nodes = [];
+  while (walker.nextNode()) nodes.push(walker.currentNode);
+  for (const [source, translation] of Object.entries(publicationsTranslations[language])) {
+    let found = false;
+    for (const node of nodes) {
+      if (node.nodeValue.includes(source)) {
+        node.nodeValue = node.nodeValue.replaceAll(source, translation);
+        found = true;
+      }
+    }
+    if (!found) throw new Error(`Publications text not found: ${source}`);
+  }
+}
+
 function localizePage(sourceHtml, language, originalPath) {
   const dom = new JSDOM(sourceHtml);
   const { document } = dom.window;
@@ -163,6 +183,7 @@ function localizePage(sourceHtml, language, originalPath) {
       anchor.setAttribute('href', localUrl(anchor.getAttribute('href'), language));
     }
   }
+  if (originalPath === '/publications/') localizePublications(document, language);
   showContentAddressesAsLinkText(document);
   return '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
 }
