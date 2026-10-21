@@ -107,6 +107,17 @@ function rewritePageLinks(document, language) {
   }
 }
 
+function showContentAddressesAsText(document) {
+  for (const anchor of document.querySelectorAll('.markdown-body a[href], .page-content a[href]')) {
+    const href = anchor.getAttribute('href');
+    if (/^https?:\/\//i.test(href)) {
+      anchor.replaceWith(document.createTextNode(href));
+    } else if (/^mailto:/i.test(href)) {
+      anchor.replaceWith(document.createTextNode(href.slice(7)));
+    }
+  }
+}
+
 function localizePage(sourceHtml, language, originalPath) {
   const dom = new JSDOM(sourceHtml);
   const { document } = dom.window;
@@ -152,6 +163,7 @@ function localizePage(sourceHtml, language, originalPath) {
       anchor.setAttribute('href', localUrl(anchor.getAttribute('href'), language));
     }
   }
+  showContentAddressesAsText(document);
   return '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
 }
 
