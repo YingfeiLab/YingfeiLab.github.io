@@ -107,13 +107,13 @@ function rewritePageLinks(document, language) {
   }
 }
 
-function showContentAddressesAsText(document) {
+function showContentAddressesAsLinkText(document) {
   for (const anchor of document.querySelectorAll('.markdown-body a[href], .page-content a[href]')) {
     const href = anchor.getAttribute('href');
     if (/^https?:\/\//i.test(href)) {
-      anchor.replaceWith(document.createTextNode(href));
+      anchor.textContent = href;
     } else if (/^mailto:/i.test(href)) {
-      anchor.replaceWith(document.createTextNode(href.slice(7)));
+      anchor.textContent = href.slice(7);
     }
   }
 }
@@ -163,7 +163,7 @@ function localizePage(sourceHtml, language, originalPath) {
       anchor.setAttribute('href', localUrl(anchor.getAttribute('href'), language));
     }
   }
-  showContentAddressesAsText(document);
+  showContentAddressesAsLinkText(document);
   return '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
 }
 
